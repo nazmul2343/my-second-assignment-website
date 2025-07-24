@@ -70,15 +70,11 @@
 .banner-image{
     padding: 106px 0 0 0;
     max-width: 570px;
+    align-items: end;
 }
-/* .img{
+.img{
     width: 100%;
-} */
-.banner-main-title{
-    
-    
-} 
-
+}
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
@@ -99,8 +95,122 @@
     color: rgba(0, 0, 0, 0.5);
     margin: 0 0;
 }
-@media screen and (max-width: 576px) {
-    .navbar, .nav-links, .banner{
-        flex-direction: column;
+@media screen and (max-width: 576px){
+    .navbar{
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 30px;
+        
+    }
+    .display-none{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0;
+    } 
+    .banner-content{
+        padding-top: 28px;
+    }
+    .banner-image{
+        padding-top: 28px;
+    }  
+}
+
+.plants-section{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+.section-center{
+    text-align: center;
+    
+}
+.section-title{
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: #000000;
+}
+.section-sub-title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 888px;
+    margin: 0 auto;
+}
+
+.section-cards{
+    padding-top: 49px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 50px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.cards-items{
+    max-width: 270px;
+    margin: 0 auto;
+   width: 100%; 
+   
+}
+.card-image{
+    width: 100%;
+}
+.card-images{
+    width: 100%;
+}
+.card-title{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #111111;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 0;
+    width: 100%;
+}
+.card-price{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #111111;
+    line-height: 150%;
+    text-align: center;
+    margin: 0 0;
+    width: 100%;
+}
+.card-item{
+   padding-top: 30px;
+   width: 100%
+   
+}
+.card-button{
+    padding-top: 30px;
+    width: 100%;
+}
+.btn-primary{
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #E95A08;
+    color: #FFFFFF;
+    padding: 19px 80px;
+    border: none;
+    max-width: 270px;
+    
+}
+@media screen and (max-width:576px) {
+    .section-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .btn-primary{
+        padding: 19px 30px;
+        width: 189px;
+    }
+    .card-button{
+        width: 100%;
     }
 }
