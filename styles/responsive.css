@@ -214,3 +214,52 @@
         width: 100%;
     }
 }
+
+.plants-lover-section{
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 210px;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.lover-title-unordered-list{
+    width: 540px;
+    height: 521px;
+}
+.lover-title{
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: #000000;
+    width: 540px;
+    height: 137px;
+    margin: 0 0;
+}
+.lover-list-sub-title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    height: 108px;
+    margin: 0 0;
+    padding-top: 15px;
+}
+.badge-image{
+    margin-bottom: -120px;
+    margin-left: -240px;
+    margin-top: -200px;
+    
+}
+.lover-section-left{
+    width: 540px;
+}
+.lover-image{
+    width: 100%;
+
+}
+@media screen and(max-width: 576px){
+    .plants-lover-section{
+        flex-direction: column;
+    }
+}
