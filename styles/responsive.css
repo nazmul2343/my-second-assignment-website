@@ -12,6 +12,7 @@
   font-optical-sizing: auto;
   font-style: normal; 
 }
+
 .navbar, .banner{
     max-width: 1140px;
     margin: 0 auto;
@@ -200,15 +201,17 @@
     max-width: 270px;
     
 }
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
     .section-cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        
         
     }
     .btn-primary{
         padding: 19px 30px;
         width: 189px;
+        max-width: 270px;
     }
     .card-button{
         width: 100%;
@@ -216,32 +219,33 @@
 }
 
 .plants-lover-section{
-    display: flex;
     max-width: 1140px;
     margin: 0 auto;
     padding-top: 210px;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     
     
 }
 .lover-title-unordered-list{
     width: 540px;
-    height: 521px;
+    /* height: 521px; */
+    
 }
 .lover-title{
     font-size: 3.1rem;
     font-weight: 700;
     color: #000000;
     width: 540px;
-    height: 137px;
+    /* height: 137px; */
     margin: 0 0;
 }
 .lover-list-sub-title{
     font-size: 1.4rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.5);
-    height: 108px;
+    /* height: 108px; */
     margin: 0 0;
     padding-top: 15px;
 }
@@ -252,14 +256,132 @@
     
 }
 .lover-section-left{
-    width: 540px;
+    width: 100%;
 }
 .lover-image{
     width: 100%;
+    width: 540px;
 
 }
-@media screen and(max-width: 576px){
+@media screen and (max-width: 576px){
     .plants-lover-section{
         flex-direction: column;
+        padding-top: 60px;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        max-width: 576px;
     }
+    .lover-image{
+        width: 100%;
+    }
+    .lover-title-unordered-list{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .lover-list-sub-title{
+        padding-top: 16px;
+    }
+    
+}
+
+.latest-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 210px;
+    
+}
+.latest-content{
+    text-align: center;
+}
+.latest-title{
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0;
+}
+.latest-sub-title{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 888px;
+    margin: 0 auto;
+    padding-top: 16px;
+    
+}
+@media screen and (max-width: 576px){
+    .latest-sub-title{
+        width: 100%;
+    }
+}
+.card-layout{
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.card-content-left-a{
+    text-align: center;
+    border-radius: 14px;
+    width: 367px;
+    height: 202px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(../assets/deal-bloom.png);
+    margin-top: 100px;
+    
+}
+.card-content-left-b{
+    text-align: center;
+    border-radius: 14px;
+    width: 367px;
+    height: 198px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(../assets/deal-ana.png);
+    margin-top: 100px;
+}
+.card-layout-left{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.layout-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-top: 60px;
+    
+}
+.layout-sub-title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: underline;
+    
+}
+.card-content-right{
+    text-align: center;
+    border-radius: 22px;
+    width: 753px;
+    height: 423px;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(../assets/deal-zabo.png);
+    margin-left: 380px;
+    margin-top: -250px;
+}
+.layout-title-right{
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-top: 170px;
+
+}
+.layout-sub-title-right{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+@media screen and (max-width: 576px){
+
 }
